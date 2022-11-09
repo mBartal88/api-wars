@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Register | API Wars{% endblock %}
+{% block l1 %}{% if username != "" %}<a class="nav-link" href="/logout">Logout</a>{% endif %}{% endblock %}
+{% block l2 %}{% if username != "" %}<a id="logged-as" class="nav-link" href="#">Logged in as: {{ username }}</a>{% endif %}{% endblock %}
+{% block l3 %}{% if username == "" %}<a class="nav-link" href="/login">Login</a>{% endif %}{% endblock %}
+{% block header %}Register new account{% endblock %}
+{% block content %}
+
+    <div class="register">
+    <h1>Register new account</h1><br><br>
+    <form action="/register" method="post">
+    <label for="username">New username</label><br>
+    <input type="email" id="username" name="username"><br><br>
+    <label for="password">New password</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <button type="submit">Submit</button>
+    </form><br>
+
+    {% if message != "" %}<p id="error-message">{{ message }}</p>{% endif %}
+    </div>
+
+    <script src="../static/js/prevent resending post request.js"></script>
+{% endblock %}

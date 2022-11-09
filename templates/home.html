@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Home Page | API Wars{% endblock %}
+{% block l1 %}{% if username != "" %}<a class="nav-link" href="/logout">Logout</a>{% endif %}{% endblock %}
+{% block l2 %}{% if username != "" %}<a id="logged-as" class="nav-link" href="#">Logged in as: {{ username }}</a>{% endif %}{% endblock %}
+{% block l3 %}{% if username == "" %}<a class="nav-link" href="/login">Login</a>{% endif %}{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+
+        <div class="header">
+            <h1 style="color: white">Star Wars universe planets</h1>
+            <div id="button-container"></div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <table class="table">
+        <thead><tr>
+            <th id="name">Name</th>
+            <th id="diameter">Diameter</th>
+            <th id="climate">Climate</th>
+            <th id="terrain">Terrain</th>
+            <th id="surface">Surface Water<br>Percentage</th>
+            <th id="populaion">Population</th>
+            <th id="residents">Residents</th>
+            <th id="vote" class="voting" style='display: none'></th>
+        </tr></thead>
+        <tbody id="table-data"></tbody>
+        </table>
+
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h5 id="planet-name">table name</h5>
+        <table class="res-table">
+            <thead><tr>
+            <th id="name" style="width: 15%">Name</th>
+            <th id="height">Height</th>
+            <th id="mass">Mass</th>
+            <th id="hair-color">Hair color</th>
+            <th id="skin-color">Skin color</th>
+            <th id="eye-color">Eye color</th>
+            <th id="birth-year">Birth year</th>
+            <th id="gender">Gender</th>
+            </tr></thead>
+        <tbody id="residents-data"></tbody>
+        </table>
+        <br><button id="button" class="button">Close</button>
+        </div>
+        </div>
+{% endblock %}

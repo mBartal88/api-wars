@@ -1,0 +1,261 @@
+body {
+    background-image: url("https://www.itl.cat/pngfile/big/32-323910_star-wars-death-star-hd-backgrounds-star-wars.jpg");
+}
+
+
+#error-message {
+    color: red;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid lightgray;
+    font-size: 18px;
+    /*background-color: white;*/
+    background-color: rgb(250,250,250); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+}
+
+.table th {
+    border: 1px solid lightgray;
+    text-align: left;
+    vertical-align: bottom;
+    height: 45px;
+    border-bottom: 2px solid lightgray;
+    padding: 15px;
+}
+
+.table td {
+    border: 1px solid lightgray;
+    text-align: left;
+    height: 35px;
+    vertical-align: top;
+    padding: 15px;
+}
+
+.table #res{
+    border: 1px solid lightgray;
+    text-align: center;
+    height: 35px;
+    vertical-align: top;
+    padding: 15px;
+}
+
+.res-table {
+    font-size: 16px;
+    width: 95%;
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.res-table th {
+    height: 45px;
+    border: 1px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    padding: 5px;
+}
+
+.res-table td {
+    height: 45px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+/*tr:nth-child(even){background-color: red}*/
+
+#name {width: 3%}
+#diameter {width: 1%}
+#climate {width: 7%}
+#terrain {width: 12%;}
+#surface {width: 4%}
+#populaion {width: 6%}
+#residents {width: 8%}
+#vote {width: 1%}
+
+
+
+.vote-button {
+    height: 100%;
+	width: 100%;
+    font-size: 100%;
+    border: 1px solid #7c7c7c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(rgba(0, 0, 0, 0.4)));
+    border-radius: 5px;
+}
+
+.resident-button {
+    height: 100%;
+	width: 72%;
+    font-size: 17px;
+    border: 1px solid #7c7c7c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(rgba(0, 0, 0, 0.4)));
+    border-radius: 5px;
+}
+
+.resident-button:hover, .vote-button:hover, .button:hover, #previous:hover, #next:hover, #button2:hover {
+  background-color: red;
+  color: white;
+}
+
+#previous, #next {
+    background-color: darkblue;
+    color: whitesmoke;
+    height: 40px;
+    font-size: 100%;
+}
+
+.login {
+    position: fixed;
+	top: 20%;
+	left: 45%;
+    color: white;
+}
+
+.register {
+    position: fixed;
+	top: 20%;
+	left: 45%;
+    color: white;
+}
+
+#logged-as {
+    position: fixed;
+	left: 85%;
+}
+
+.header {
+    position: fixed;
+	top: 6.5%;
+	left:5%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: 1px solid white;
+    position: relative;
+    display: table; /* This is important */
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 60%;
+    top: 10%;
+    left: 20%;
+    border-radius: 1em;
+}
+
+.modal-content2 {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: 1px solid white;
+    position: relative;
+    display: table; /* This is important */
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 20%;
+    top: 10%;
+    left: 40%;
+    border-radius: 1em;
+}
+
+.button {
+    width: 80px;
+    height: 40px;
+    left: 92.5%;
+    position: relative;
+    display: table; /* This is important */
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid #7c7c7c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(rgba(0, 0, 0, 0.4)));
+    border-radius: 10px;
+}
+
+.close, .close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    display: table; /* This is important */
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#planet-name {
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.planet-table {
+    font-size: 18px;
+    width: 75%;
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 1em;
+}
+
+.planet-table th {
+    height: 45px;
+    border: 1px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    padding: 5px;
+}
+
+.planet-table td {
+    height: 45px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+#button2 {
+    width: 80px;
+    height: 40px;
+    left: 77%;
+    position: relative;
+    display: table; /* This is important */
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid #7c7c7c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(rgba(0, 0, 0, 0.4)));
+    border-radius: 10px;
+}
+
+#planet-voting {
+    padding-left: 45px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
