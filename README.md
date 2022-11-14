@@ -1,5 +1,14 @@
 # Api-Wars
 
+## Description
+Web application that shows data about the Star Wars universe, stores visitor preferences with cookies, and handles user login with sessions.
+- Flask backend project (Python).
+- Routes with Flask.
+- Simple queries in SQL.
+- AJAX used for API requests.
+- Session handling.
+- Storing passwords.
+
 ## Completed tasks:
 
 ### Index page
